@@ -24,7 +24,7 @@
 </head>
 <body class="{{body_class}}">
 	<header id="header_wordsmith">
-		{{#if @blog.cover}}<img id="cover_wordsmith" src="{{@blog.cover}}">{{/if}}
+		{{#if @blog.cover}}<a href="{{@blog.url}}"><img id="cover_wordsmith" src="{{@blog.cover}}"></a>{{/if}}
 		{{#if @blog.logo}}<a href="{{@blog.url}}"><img id="logo_wordsmith" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
 		{{else}}<a id="blogname_wordsmith" href="{{@blog.url}}"><h1>&nbsp;</h1></a>
 		{{/if}}
@@ -34,12 +34,12 @@
 	{{{body}}}
 
 	<footer class="footer_wordsmith">
-		<div id="socialshare_wordsmith">
+		<!-- <div id="socialshare_wordsmith">
 			<a target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="iconfont_wordsmith icon-facebook"></span></a>
 			<a target="_blank" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"><span class="iconfont_wordsmith icon-twitter"></span></a>
 			<a target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="iconfont_wordsmith icon-google-plus"></span></a>
 			<a target="_blank" href="{{@blog.url}}/rss/"><span class="iconfont_wordsmith icon-feed"></span></a>
-		</div>
+		</div> -->
 		<div id="copyright_wordsmith">© 2015 <a href="/">{{@blog.title}}</a>.</div>
 	</footer>
 
