@@ -3,10 +3,8 @@
 <section id="content_wordsmith">
 {{#post}}
 	<article class="article_wordsmith" role="article" itemscope itemtype="http://schema.org/Article">
-
-		<time class="date_wordsmith helv_wordsmith" datetime="{{date format='MMM DD, YYYY'}}" itemprop="datePublished">{{date format='MMM DD, YYYY'}}</time>{{#if tags}}<span class="helv_wordsmith"> on {{tags separator=", "}}</span>{{/if}}
-
 		<h1 class="posttitle_wordsmith" itemprop="headline">{{title}}</h1>
+    <time class="date_wordsmith helv_wordsmith" datetime="{{date format='MMM DD, YYYY'}}" itemprop="datePublished">{{date format='MMM DD, YYYY'}}</time>{{#if tags}}<span class="helv_wordsmith"> on {{tags separator=", "}}</span>{{/if}}
 
     <div class="addthis_native_toolbox"></div>
 		<div class="postcontent_wordsmith">
